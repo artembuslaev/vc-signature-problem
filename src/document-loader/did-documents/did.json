@@ -1,0 +1,18 @@
+{
+    "@context": "https://www.w3.org/ns/did/v1",
+    "id": "did:hedera:testnet:Gc5Vs4eQ8EvdPodjTz64AqoSX2JQcCsgvDntTgrsgZ1f_0.0.49251262",
+    "verificationMethod": [
+      {
+        "id": "did:hedera:testnet:Gc5Vs4eQ8EvdPodjTz64AqoSX2JQcCsgvDntTgrsgZ1f_0.0.49251262#did-root-key",
+        "type": "Ed25519VerificationKey2018",
+        "controller": "did:hedera:testnet:Gc5Vs4eQ8EvdPodjTz64AqoSX2JQcCsgvDntTgrsgZ1f_0.0.49251262",
+        "publicKeyBase58": "DK4HTuz1Vm2M5erZz66QztfMwS1Vsz6V7gL1ss5eBZsq"
+      }
+    ],
+    "authentication": [
+      "did:hedera:testnet:Gc5Vs4eQ8EvdPodjTz64AqoSX2JQcCsgvDntTgrsgZ1f_0.0.49251262#did-root-key"
+    ],
+    "assertionMethod": [
+      "#did-root-key"
+    ]
+  }
