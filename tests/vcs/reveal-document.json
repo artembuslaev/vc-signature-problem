@@ -1,0 +1,23 @@
+{
+    "id": "urn:uuid:d07a261f-1959-44d8-a73f-ad1a743e7794",
+    "type": [
+        "VerifiableCredential"
+    ],
+    "issuer": "did:hedera:testnet:Gc5Vs4eQ8EvdPodjTz64AqoSX2JQcCsgvDntTgrsgZ1f_0.0.49251262",
+    "issuanceDate": "2023-01-19T10:06:19.367Z",
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/bls12381-2020/v1"
+    ],
+    "credentialSubject": [
+        {
+            "@explicit": true,
+            "field1": {},
+            "@context": [
+                "schema#c6f68dcd-d02d-4eb4-8787-66a57a4ce00f"
+            ],
+            "id": "urn:uuid:b68f27f5-e75c-465a-b494-0e049bc91207",
+            "type": "c6f68dcd-d02d-4eb4-8787-66a57a4ce00f"
+        }
+    ]
+}

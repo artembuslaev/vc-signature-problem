@@ -1,5 +1,5 @@
 {
-    "id": "55b6f167-dcad-4dbd-acdc-33922c053ad5",
+    "id": "urn:uuid:55b6f167-dcad-4dbd-acdc-33922c053ad5",
     "type": ["VerifiableCredential"],
     "issuer": "did:hedera:testnet:Gc5Vs4eQ8EvdPodjTz64AqoSX2JQcCsgvDntTgrsgZ1f_0.0.49251262",
     "issuanceDate": "2023-01-18T09:15:54.604Z",

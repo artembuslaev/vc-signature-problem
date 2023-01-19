@@ -25,14 +25,14 @@ export class DefaultDocumentLoader extends DocumentLoader {
         if ((securityContexts.contexts as Map<string, object>).has(iri)) {
             return true;
         }
-        if (iri === 'schema#c6f68dcd-d02d-4eb4-8787-66a57a4ce00f') {
-            return true;
-        }
         if (
-            iri ===
-                'did:hedera:testnet:Gc5Vs4eQ8EvdPodjTz64AqoSX2JQcCsgvDntTgrsgZ1f_0.0.49251262' ||
-            iri ===
-                'did:hedera:testnet:Gc5Vs4eQ8EvdPodjTz64AqoSX2JQcCsgvDntTgrsgZ1f_0.0.49251262#did-root-key'
+            [
+                'schema#c6f68dcd-d02d-4eb4-8787-66a57a4ce00f',
+                'did:hedera:testnet:Gc5Vs4eQ8EvdPodjTz64AqoSX2JQcCsgvDntTgrsgZ1f_0.0.49251262',
+                'did:hedera:testnet:Gc5Vs4eQ8EvdPodjTz64AqoSX2JQcCsgvDntTgrsgZ1f_0.0.49251262#did-root-key',
+                'did:hedera:testnet:Gc5Vs4eQ8EvdPodjTz64AqoSX2JQcCsgvDntTgrsgZ1f_0.0.49251262#did-root-key1',
+                'https://w3id.org/security/bbs/v1',
+            ].includes(iri)
         ) {
             return true;
         }
@@ -69,14 +69,21 @@ export class DefaultDocumentLoader extends DocumentLoader {
             };
         }
         if (
-            iri ===
-                'did:hedera:testnet:Gc5Vs4eQ8EvdPodjTz64AqoSX2JQcCsgvDntTgrsgZ1f_0.0.49251262' ||
-            iri ===
-                'did:hedera:testnet:Gc5Vs4eQ8EvdPodjTz64AqoSX2JQcCsgvDntTgrsgZ1f_0.0.49251262#did-root-key'
+                ['did:hedera:testnet:Gc5Vs4eQ8EvdPodjTz64AqoSX2JQcCsgvDntTgrsgZ1f_0.0.49251262',
+                'did:hedera:testnet:Gc5Vs4eQ8EvdPodjTz64AqoSX2JQcCsgvDntTgrsgZ1f_0.0.49251262#did-root-key',
+                'did:hedera:testnet:Gc5Vs4eQ8EvdPodjTz64AqoSX2JQcCsgvDntTgrsgZ1f_0.0.49251262#did-root-key1'].includes(iri)
         ) {
             return {
                 documentUrl: iri,
                 document: did,
+            };
+        }
+        if (iri === 'https://w3id.org/security/bbs/v1') {
+            return {
+                documentUrl: iri,
+                document: securityContexts.contexts.get(
+                    securityContexts.constants.BLS12381_2020_V1_URL
+                ),
             };
         }
         throw new Error('IRI not found: ' + iri);

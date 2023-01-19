@@ -2,17 +2,21 @@
     "@context": "https://www.w3.org/ns/did/v1",
     "id": "did:hedera:testnet:Gc5Vs4eQ8EvdPodjTz64AqoSX2JQcCsgvDntTgrsgZ1f_0.0.49251262",
     "verificationMethod": [
-      {
-        "id": "did:hedera:testnet:Gc5Vs4eQ8EvdPodjTz64AqoSX2JQcCsgvDntTgrsgZ1f_0.0.49251262#did-root-key",
-        "type": "Ed25519VerificationKey2018",
-        "controller": "did:hedera:testnet:Gc5Vs4eQ8EvdPodjTz64AqoSX2JQcCsgvDntTgrsgZ1f_0.0.49251262",
-        "publicKeyBase58": "DK4HTuz1Vm2M5erZz66QztfMwS1Vsz6V7gL1ss5eBZsq"
-      }
+        {
+            "id": "did:hedera:testnet:Gc5Vs4eQ8EvdPodjTz64AqoSX2JQcCsgvDntTgrsgZ1f_0.0.49251262#did-root-key",
+            "type": "Ed25519VerificationKey2018",
+            "controller": "did:hedera:testnet:Gc5Vs4eQ8EvdPodjTz64AqoSX2JQcCsgvDntTgrsgZ1f_0.0.49251262",
+            "publicKeyBase58": "DK4HTuz1Vm2M5erZz66QztfMwS1Vsz6V7gL1ss5eBZsq"
+        },
+        {
+            "id": "did:hedera:testnet:Gc5Vs4eQ8EvdPodjTz64AqoSX2JQcCsgvDntTgrsgZ1f_0.0.49251262#did-root-key1",
+            "type": "Bls12381G2Key2020",
+            "controller": "did:hedera:testnet:Gc5Vs4eQ8EvdPodjTz64AqoSX2JQcCsgvDntTgrsgZ1f_0.0.49251262",
+            "publicKeyBase58": "23M4HRjNucgT8g27D6zyEu5aH4qRvrgZQUmBzUs93zWK12GDhiJYJBTL9hpHSa2n6ckgSxJK4L8bn8yrE9pYyfvadCHYS5apYDmMt7DLaeygzWEXcZw7z7FCx3WbVruwXBK5"
+        }
     ],
     "authentication": [
-      "did:hedera:testnet:Gc5Vs4eQ8EvdPodjTz64AqoSX2JQcCsgvDntTgrsgZ1f_0.0.49251262#did-root-key"
+        "did:hedera:testnet:Gc5Vs4eQ8EvdPodjTz64AqoSX2JQcCsgvDntTgrsgZ1f_0.0.49251262#did-root-key"
     ],
-    "assertionMethod": [
-      "#did-root-key"
-    ]
-  }
+    "assertionMethod": ["#did-root-key", "#did-root-key1"]
+}
